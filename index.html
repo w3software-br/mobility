@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mobility</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container-sm">
+
+      <!-- A grey horizontal navbar that becomes vertical on small screens -->
+      <nav class="navbar navbar-expand-sm" style="background-color: #633689;">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about" style="color: #fff;">Sobre</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#privacyPolicy" style="color: #fff;">Política de Privacidade</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#comments" style="color: #fff;">Observações</a>
+          </li>
+        </ul>
+
+      </nav> 
+
+      <div class="container text-center" 
+        style="margin-top: 50px; background-color: #45aa65;">
+        <div class="container d-none d-md-block">
+          <img src="assets/logo.png" alt="Icon" width="300px">    
+        </div>
+        <div class="container d-md-none">
+          <img src="assets/logo.png" alt="Icon" width="80%">    
+        </div>
+      </div>
+    </div>
+    
+    <div class="container" style="margin-bottom: 50px;">
+
+      <hr style="border-color: #45aa65; border-width: 1px;">
+
+      <Header class="container" style="font-size: 120%;">
+        <h2 id="about" class="text-center">
+          <strong style="color: #45aa65">Sobre</strong></h2>
+        <p font-weight: bolder;">
+          O objetivo desse aplicativo é facilitar o uso do sistema de  transporte público de 
+          Fortaleza. Para isso, o App consome dados da API (Application Programming Interface) 
+          da ETUFor (Empresa de Transporte Urbano de Fortaleza). Por tanto, <u><i>Todas 
+          as informações mostradas neste App são fornecidas pela ETUFor. </i>
+          </u>
+        </p>
+        
+        
+        <h2 class="text-center">
+          <strong style="color: #45aa65">O que você pode fazer com esse App?</strong></h2>
+
+        <div class="list-group" style="font-weight: bold;">
+          <a href="#" class="list-group-item list-group-item-action">
+            1 - Ver a lista de todas as linhas de ônibus de Fortaleza</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            2 - Encontrar uma linha específica
+          </a>
+          <a href="#" class="list-group-item list-group-item-action" >
+            3 - Ver o intinerário de uma determinada linha
+          </a>
+          <a href="#" class="list-group-item list-group-item-action" >
+            4 - Ver os horários de uma determinada linha em seus postos de controle. Um posto 
+            de controle pode ser um terminal ou qualquer outro logradouro (rua, avenida etc...)
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            5 - Ver todos os logradouros (terminais, ruas, avenidas etc...) servidos por pelo menos uma linha. 
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            6 - Encontrar um logradouro (terminais, ruas, avenidas etc...) específico. Ou seja: você pode pesquisar 
+            por um logradouro qualquer de Fortaleza desde que, neste logradouro, passe pelo menos 
+            uma linha de ônibus
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            7 - Vêr todas as linhas de ônibus que passam em um determinado logradouro (terminais, ruas, avenidas etc...)
+          </a>
+        </div> 
+
+      </Header>
+
+      <hr style="border-color: #45aa65; border-width: 1px; margin-bottom: 50px; margin-top: 50px;">
+
+      <div class="container" style="font-size: 120%; color: #633689;">
+        <h2 class="text-center" id="privacyPolicy">
+          <strong style="color: #45aa65">Política de privacidade</strong>
+        </h2>
+
+        <div class="list-group" style="font-weight: bold;">
+          <a href="#" class="list-group-item list-group-item-action">
+            1 - Esse aplicativo não precisa de qualquer permissão especial</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            2 - Nenhuma informação do usuário é enviada para qualquer dispositivo
+          </a>
+
+        </div> 
+
+      </div>
+
+      <div class="container" style="font-size: 120%;">
+        <h2 class="text-center" id="comments">
+          <strong style="color: #45aa65">Observações</strong></h2>
+        <br>
+        <h4 class="text-center">
+          <strong style="color: red">Programação não encontrada!</strong>
+        </h4>
+        <div class="container text-center" 
+          style="margin-top: 50px;">
+          <div class="container d-none d-md-block">
+            <img src="assets/p-nao-enc.jpg" alt="Icon" width="300px">    
+          </div>
+          <div class="container d-md-none">
+            <img src="assets/p-nao-enc.jpg" alt="Icon" width="80%">    
+          </div>
+        </div>
+
+        <p style="font-weight: bolder; margin-top: 20px;">
+          Ao pesquisar sobre horários de linhas nos postos de controle, você poderá se 
+          deparar com a mensagem <strong style="color: red">"Programação não encontrada!"</strong>. 
+          Isso significa que a API (Application Programming Interface) da ETUFor não está fornecendo os horários para essa determinada 
+          linha de ônibus. Tente novamente outro dia.  
+        </p>
+
+        <hr>
+
+        <h4 class="text-center">
+          <strong style="color: #45aa65">Sugestão de ônibus</strong>
+        </h4>
+        <div class="container text-center" 
+          style="margin-top: 50px;">
+          <div class="row" style="margin: 20px;">
+            
+            <div class="col-*-*">
+              <div class="container d-none d-md-block">
+                <img src="assets/loog-i.jpg" alt="Icon" width="300px">    
+              </div>
+              <div class="container d-md-none">
+                <img src="assets/loog-i.jpg" alt="Icon" width="90%">    
+              </div>
+            </div>
+
+            <div class="col-*-*">
+              <div class="col-*-*">
+                <div class="container d-none d-md-block">
+                  <img src="assets/log-f.jpg" alt="Icon" width="300px">    
+                </div>
+                <div class="container d-md-none">
+                  <img src="assets/log-f.jpg" alt="Icon" width="90%">    
+                </div>
+              </div>
+            </div>
+
+            <div class="col-*-*">
+              <div class="col-*-*">
+                <div class="container d-none d-md-block">
+                  <img src="assets/res-log.jpg" alt="Icon" width="300px">    
+                </div>
+                <div class="container d-md-none">
+                  <img src="assets/res-log.jpg" alt="Icon" width="90%">    
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <p style="font-weight: bolder; margin-top: 20px;">
+          Para receber sugestão de ônibus o usuário escolhe dois logradouros e o App pesquisa 
+          por linhas de ônibus que passem pelos dois logradouros fornecidos. Ao encontrar sugestões, o 
+          usuário poderá selecionar qualquer uma delas e vêr o itinerário completo da linha.
+        </p>
+
+      </div>
+    
+      <hr style="border-color: #45aa65; border-width: 1px; margin-bottom: 50px; margin-top: 50px;">
+
+    </div>
+    <div class="container-sm footer text-center"
+      style="color: #ffffff; background-color: #633689; font-size: 120%; padding: 20px;">
+      w3software.br@gmail.com
+    </div>
+
+  </body>
+</html>
